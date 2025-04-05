@@ -1,0 +1,45 @@
+{
+  "name": "artmarketplace_project",
+  "version": "1.0.0",
+  "description": "The Art Marketplace Solution Project is an innovative platform designed to bridge the gap between artists, art enthusiasts, and buyers. This project aims to create a dynamic online marketplace where creative talents can showcase their artwork, connect with a broader audience, and sell their creations with ease.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint *.js src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "test": "jest",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fiijoey/ArtMarketPlace_Project.git"
+  },
+  "author": "Joseph Fiifi Mensah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fiijoey/ArtMarketPlace_Project/issues"
+  },
+  "homepage": "https://github.com/Fiijoey/ArtMarketPlace_Project#readme",
+  "dependencies": {
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "express": "^5.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "vite": "^6.2.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
+}
