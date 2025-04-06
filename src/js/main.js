@@ -26,11 +26,13 @@ window.addEventListener("DOMContentLoaded", () => {
   // Add event listener for hamburger menu toggle
   document.addEventListener("click", (event) => {
     if (event.target && event.target.id === "hamburger-menu") {
-      const mobileMenu = document.getElementById("mobile-menu");
-      if (mobileMenu) {
-        mobileMenu.classList.toggle("hidden");
+      const mobileNav = document.getElementById("mobile-nav");
+      if (mobileNav) {
+        mobileNav.classList.toggle("active");
       } else {
-        console.error("Mobile menu element with ID 'mobile-menu' not found.");
+        console.error(
+          "Mobile navigation element with ID 'mobile-nav' not found.",
+        );
       }
     }
   });

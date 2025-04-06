@@ -39,6 +39,7 @@ h6 {
     padding: 1rem 2rem;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #5c7fbc64;
 }
 
 .logo {
@@ -65,7 +66,7 @@ h6 {
     color: var(--primary-color);
 }
 
-.header-buttons .btn {
+.header-buttons button {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: none;
@@ -73,6 +74,7 @@ h6 {
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -80,7 +82,7 @@ h6 {
     color: white;
 }
 
-.btn-secondary {
+.header-buttons .btn-secondary {
     background-color: transparent;
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
@@ -117,14 +119,56 @@ h6 {
 .hero-section {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--neutral-color);
+    background: url('../images/home-heros/hero1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Subtle dark overlay */
+    z-index: 0;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
     max-width: 800px;
     margin: 0 auto;
 }
-
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hero-content button{
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
 .hero-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -133,12 +177,29 @@ h6 {
 .hero-description {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 /* Blog section */
-.blog-section {
+.blog-preview {
     padding: 3rem 2rem;
+    text-align: center;
+    background-color: #d9bf773e;
+}
+.blog-preview button{
+    padding: 0.75rem 1.5rem;
+    background-color: var(--neutral-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 .section-title {
@@ -211,7 +272,7 @@ h6 {
     margin-bottom: 2rem;
 }
 
-.cta-button {
+.cta-buttons .btn {
     padding: 0.75rem 1.5rem;
     background-color: white;
     color: var(--primary-color);
@@ -220,6 +281,7 @@ h6 {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 .cta-button:hover {
@@ -246,6 +308,14 @@ h6 {
 
 .testimonial-author {
     font-weight: 500;
+}
+.testimonial-controls .prev, .testimonial-controls .next {
+    padding: 0.5rem 1rem;
+    background-color: var(--neutral-color);;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* Footer styles updated to match new design */
@@ -426,6 +496,8 @@ h6 {
     /* Hero section responsive */
     .hero-section {
         padding: 2rem 1rem;
+        min-height: 50vh;
+        /* Slightly reduced height for mobile */
     }
 
     .hero-title {
@@ -434,6 +506,11 @@ h6 {
 
     .hero-description {
         font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
     }
 
     /* Blog section responsive */

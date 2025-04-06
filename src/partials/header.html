@@ -1,12 +1,12 @@
 <!-- Header Partial -->
 <div class="header-container">
-  <div class="logo">🎨ARTsell</div>
+  <div class="logo"><a href="#">🎨ARTsell</a></div>
 
   <!-- Desktop Navigation -->
   <nav class="desktop-nav">
     <ul>
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/gellary/index.html">Gallery</a></li>
+      <li><a href="/gallery/index.html">Gallery</a></li>
       <li><a href="/artist/index.html">Artist Tools</a></li>
       <li><a href="/shop/index.html">Shop Now</a></li>
     </ul>
@@ -14,33 +14,31 @@
 
   <!-- Header Buttons -->
   <div class="header-buttons">
-    <button class="btn bordered">Join</button>
-    <button class="btn filled">Login</button>
+    <button class="btn-secondary">Join</button>
+    <button class="btn-primary">Login</button>
   </div>
 
   <!-- Mobile Navigation -->
-  <div class="mobile-nav">
+  <div id="mobile-nav" class="mobile-nav">
     <button id="hamburger-menu" aria-label="Toggle menu">☰</button>
-    <div id="mobile-menu" class="hidden">
-      <ul>
-        <li><a href="/gellary/index.html">Gallery</a></li>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/artist/index.html">Artist Tools</a></li>
-        <li><a href="/shop/index.html">Shop Now</a></li>
-        <li class="mobile-dropdown">
-          <a href="#" class="dropdown-toggle">More Links</a>
-          <ul class="mobile-dropdown-menu">
-            <li><a href="/about/index.html">About Us</a></li>
-            <li><a href="/contact/index.html">Contact</a></li>
-            <li><a href="/faq/index.html">FAQ</a></li>
-            <li><a href="/blog/index.html">Blog</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="mobile-buttons">
-        <button class="btn bordered">Join</button>
-        <button class="btn filled">Login</button>
-      </div>
+    <ul>
+      <li><a href="/gallery/index.html">Gallery</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/artist/index.html">Artist Tools</a></li>
+      <li><a href="/shop/index.html">Shop Now</a></li>
+      <li class="mobile-dropdown">
+        <a href="#" class="dropdown-toggle">More Links</a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="/about/index.html">About Us</a></li>
+          <li><a href="/contact/index.html">Contact</a></li>
+          <li><a href="/faq/index.html">FAQ</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="mobile-buttons">
+      <button class="btn-secondary">Join</button>
+      <button class="btn-primary">Login</button>
     </div>
   </div>
 </div>
