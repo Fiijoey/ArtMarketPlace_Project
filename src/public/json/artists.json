@@ -1,29 +1,34 @@
 [
     {
+        "image": "/images/artworksImg/watercolor1.jpg",
         "name": "Emma Carter",
         "age": 32,
         "field_of_interest": "Painting",
         "story": "Emma specializes in surreal landscapes, blending emotions with nature."
     },
     {
+        "image": "/images/artworksImg/watercolor1.jpg",
         "name": "Joaquin Hernandez",
         "age": 41,
         "field_of_interest": "Sculpture",
         "story": "Joaquin's works focus on modern interpretations of classical techniques."
     },
     {
+        "image": "/images/artworksImg/watercolor1.jpg",
         "name": "Sophia Klein",
         "age": 28,
         "field_of_interest": "Digital Art",
         "story": "Sophia creates mesmerizing digital visuals inspired by sci-fi worlds."
     },
     {
+        "image": "/images/artworksImg/watercolor1.jpg",
         "name": "Liam Davies",
         "age": 37,
         "field_of_interest": "Photography",
         "story": "Liam captures the raw beauty of urban life through his lens."
     },
     {
+        "image": "/images/artworksImg/watercolor1.jpg",
         "name": "Aisha Patel",
         "age": 29,
         "field_of_interest": "Mixed Media",

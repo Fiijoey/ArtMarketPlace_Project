@@ -224,7 +224,8 @@ header .cartIcon {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.blog-card{
+
+.blog-card {
     background-color: var(--neutral-color);
 }
 
@@ -528,6 +529,16 @@ button {
     text-align: center;
 }
 
+/* Product Cards Container */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Feature Section */
 .feature {
     display: flex;
@@ -538,6 +549,11 @@ button {
 
 .feature-text h3 {
     font-size: 1.4rem;
+}
+
+.feature-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* CTA Section */
@@ -694,9 +710,15 @@ button {
     gap: 20px;
 }
 
-.feature-img img {
-    width: 100%;
-    height: auto;
+.feature-image {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--neutral-color);
+    background: url('../images/arttable.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 40vh;
+    border-radius: 15px;
+    padding-top: 2rem;
 }
 
 .feature-text h3 {
@@ -708,6 +730,13 @@ button {
     color: #444;
     font-size: 0.95rem;
 }
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 /* Call to Action */
 .cta-section {
@@ -939,6 +968,38 @@ input[type="number"] {
     font-size: 1rem;
 }
 
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Artists Grid Layout */
+.artists-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.vision h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
 
 
 
@@ -991,10 +1052,18 @@ input[type="number"] {
     .art-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .product-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 900px) {
     .art-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1094,11 +1163,6 @@ input[type="number"] {
 
     .cta-image {
         flex: 1;
-    }
-
-    .feature {
-        flex-direction: row;
-        align-items: center;
     }
 
     .feature-text {
@@ -1277,5 +1341,29 @@ input[type="number"] {
 
     .cta-title {
         font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .artists-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .artists-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 993px) {
+    .artists-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
