@@ -63,7 +63,7 @@ h6 {
 }
 
 .desktop-nav ul li a:hover {
-    color: var(--primary-color);
+    color: var(--neutral-color);
 }
 
 .header-buttons button {
@@ -84,8 +84,8 @@ h6 {
 
 .header-buttons .btn-secondary {
     background-color: transparent;
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn-primary:hover {
@@ -113,6 +113,18 @@ h6 {
     margin-bottom: 5px;
     background-color: #333;
     border-radius: 3px;
+}
+
+header .cartIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+
+.cartIcon img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Hero section */
@@ -205,6 +217,7 @@ h6 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1rem;
+    color: var(--primary-color);
 }
 
 .section-title {
@@ -324,7 +337,9 @@ h6 {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: var(--primary-color);
 }
+
 
 /* Footer styles updated to match new design */
 .footer {
@@ -807,14 +822,14 @@ button {
     padding: 20px;
     font-family: Arial, sans-serif;
     color: #222;
-  }
-  
-  .cart-items h1 {
+}
+
+.cart-items h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-  }
-  
-  .cart-item {
+}
+
+.cart-item {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -822,58 +837,58 @@ button {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
-  
-  .cart-item img {
+}
+
+.cart-item img {
     width: 100%;
     max-width: 100px;
     border-radius: 6px;
-  }
-  
-  .item-details {
+}
+
+.item-details {
     display: flex;
     flex-direction: column;
     gap: 6px;
-  }
-  
-  .item-details h2 {
+}
+
+.item-details h2 {
     font-size: 1rem;
     margin: 0;
-  }
-  
-  .item-price {
+}
+
+.item-price {
     font-weight: bold;
     font-size: 1rem;
     margin-top: 5px;
-  }
-  
-  .remove-btn {
+}
+
+.remove-btn {
     background: none;
     color: #c00;
     border: none;
     padding: 0;
     font-size: 0.9rem;
     cursor: pointer;
-  }
-  
-  input[type="number"] {
+}
+
+input[type="number"] {
     width: 60px;
     padding: 4px;
     font-size: 1rem;
-  }
-  
-  .cart-summary {
+}
+
+.cart-summary {
     margin-top: 30px;
     padding: 20px;
     background: #fafafa;
     border-radius: 8px;
-  }
-  
-  .cart-summary h2 {
+}
+
+.cart-summary h2 {
     margin-bottom: 10px;
-  }
-  
-  .checkout-btn {
+}
+
+.checkout-btn {
     margin-top: 10px;
     background: #000;
     color: #fff;
@@ -883,10 +898,10 @@ button {
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
-  }
-  
+}
 
-  
+
+
 
 
 /* ======================================= */
@@ -894,21 +909,22 @@ button {
 /* ======================================= */
 @media (min-width: 768px) {
     .cart-item {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
-  
+
     .item-details {
-      flex: 1;
-      margin-left: 15px;
+        flex: 1;
+        margin-left: 15px;
     }
-  
+
     .item-price {
-      text-align: right;
-      min-width: 60px;
+        text-align: right;
+        min-width: 60px;
     }
-  }
+}
+
 @media (min-width: 768px) {
     .checkout-form {
         flex-direction: row;
