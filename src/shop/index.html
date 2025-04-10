@@ -4,96 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Art Marketplace</title>
+    <title>Artists - Art Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/shop.js" type="module"></script>
 </head>
 
-<!-- Gallery Section -->
-<section class="gallery">
-    <div class="section-title">
-        <h2>Gallery</h2>
-        <p>Explore our diverse collection of unique artworks.</p>
-        <button class="view-all">View All</button>
-    </div>
-    <div class="product-grid">
-        <!-- Sample product -->
-        <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="Artwork" />
-            <div class="product-info">
-                <strong>Sunset Painting</strong>
-                <span>Canvas</span>
-                <span>$55</span>
-            </div>
-            <button>Add to cart</button>
+<body>
+    <header id="mainHeader"></header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="section-title">
+            <h2>Gallery</h2>
+            <p>Explore our diverse collection of unique artworks.</p>
+            <button class="view-all">View All</button>
         </div>
-        <!-- Repeat product-card for all products -->
-    </div>
-</section>
+        <div class="product-grid">
+            <!-- Sample product -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Artwork" />
+                <div class="product-info">
+                    <strong>Sunset Painting</strong>
+                    <span>Canvas</span>
+                    <span>$55</span>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <!-- Repeat product-card for all products -->
+        </div>
+    </section>
 
-<!-- Feature Section -->
-<section class="feature">
-    <div class="feature-image">
-        <img src="https://via.placeholder.com/300x300" alt="Feature" />
-    </div>
-    <div class="feature-text">
-        <h3>Long heading is what you see here in this feature section</h3>
-        <p>
-            Discover stunning artwork from talented artists around the world. Each
-            piece is crafted with passion and ready to elevate your space.
-        </p>
-    </div>
-</section>
+    <!-- Feature Section -->
+    <section class="feature">
+        <div class="feature-image">
+            <img src="https://via.placeholder.com/300x300" alt="Feature" />
+        </div>
+        <div class="feature-text">
+            <h3>Long heading is what you see here in this feature section</h3>
+            <p>
+                Discover stunning artwork from talented artists around the world. Each
+                piece is crafted with passion and ready to elevate your space.
+            </p>
+        </div>
+    </section>
 
-<!-- CTA Section -->
-<section class="cta">
-    <div class="cta-text">
-        <h3>Join Our Creative Community</h3>
-        <p>
-            Create an account today to explore, shop, and showcase your artistic
-            journey with us!
-        </p>
-        <button>Sign Up</button>
-        <button>Cart</button>
-    </div>
-    <div class="cta-image">
-        <img src="https://via.placeholder.com/300x300" alt="CTA" />
-    </div>
-</section>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-text">
+            <h3>Join Our Creative Community</h3>
+            <p>
+                Create an account today to explore, shop, and showcase your artistic
+                journey with us!
+            </p>
+            <button>Sign Up</button>
+            <button>Cart</button>
+        </div>
+        <div class="cta-image">
+            <img src="https://via.placeholder.com/300x300" alt="CTA" />
+        </div>
+    </section>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2023 Art Marketplace. All rights reserved.</p>
-    </div>
-</footer>
-
-<!-- Scripts -->
-<script src="../js/main.js"></script>
-<script>
-    // Load header partial
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                return;
-            }
-        }
-    }
-    includeHTML();
-</script>
+    <footer id="mainFooter"></footer>
 </body>
 
 </html>

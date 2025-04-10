@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artists - Art Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/artist.js" type="module"></script>
 </head>
 
 <body>
-    <!-- Header Section -->
+    <header id="mainHeader"></header>
     <div w3-include-html="../partials/header.html"></div>
 
     <!-- Main Content -->
@@ -66,40 +69,10 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Art Marketplace. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer id="mainFooter"></footer>
 
     <!-- Scripts -->
     <script src="../js/main.js"></script>
-    <script>
-        // Load header partial
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    return;
-                }
-            }
-        }
-        includeHTML();
-    </script>
 </body>
 
 </html>
