@@ -1,34 +1,32 @@
-{
-    "artists": [
-        {
-            "name": "Emma Carter",
-            "age": 32,
-            "field_of_interest": "Painting",
-            "story": "Emma specializes in surreal landscapes, blending emotions with nature."
-        },
-        {
-            "name": "Joaquin Hernandez",
-            "age": 41,
-            "field_of_interest": "Sculpture",
-            "story": "Joaquin's works focus on modern interpretations of classical techniques."
-        },
-        {
-            "name": "Sophia Klein",
-            "age": 28,
-            "field_of_interest": "Digital Art",
-            "story": "Sophia creates mesmerizing digital visuals inspired by sci-fi worlds."
-        },
-        {
-            "name": "Liam Davies",
-            "age": 37,
-            "field_of_interest": "Photography",
-            "story": "Liam captures the raw beauty of urban life through his lens."
-        },
-        {
-            "name": "Aisha Patel",
-            "age": 29,
-            "field_of_interest": "Mixed Media",
-            "story": "Aisha's art fuses traditional and digital mediums, exploring themes of identity."
-        }
-    ]
-}
+[
+    {
+        "name": "Emma Carter",
+        "age": 32,
+        "field_of_interest": "Painting",
+        "story": "Emma specializes in surreal landscapes, blending emotions with nature."
+    },
+    {
+        "name": "Joaquin Hernandez",
+        "age": 41,
+        "field_of_interest": "Sculpture",
+        "story": "Joaquin's works focus on modern interpretations of classical techniques."
+    },
+    {
+        "name": "Sophia Klein",
+        "age": 28,
+        "field_of_interest": "Digital Art",
+        "story": "Sophia creates mesmerizing digital visuals inspired by sci-fi worlds."
+    },
+    {
+        "name": "Liam Davies",
+        "age": 37,
+        "field_of_interest": "Photography",
+        "story": "Liam captures the raw beauty of urban life through his lens."
+    },
+    {
+        "name": "Aisha Patel",
+        "age": 29,
+        "field_of_interest": "Mixed Media",
+        "story": "Aisha's art fuses traditional and digital mediums, exploring themes of identity."
+    }
+]

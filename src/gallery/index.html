@@ -19,49 +19,40 @@
         <p>Browse our curated selection of stunning artworks from talented artists around the world.</p>
     </section>
 
-    <!-- Filters Section (UI only, not functional) -->
+    <!-- Filters Section -->
     <section class="gallery-filters">
-        <label for="category-filter">Filter by Category:</label>
-        <select id="category-filter">
-            <option value="">All Categories</option>
-            <option value="painting">Painting</option>
-            <option value="sculpture">Sculpture</option>
-            <option value="digital">Digital Art</option>
-        </select>
+        <div class="filter-group">
+            <label for="search-filter">Search:</label>
+            <input type="text" id="search-filter" class="filter-input" placeholder="Search artwork...">
+        </div>
 
-        <label for="sort-filter">Sort By:</label>
-        <select id="sort-filter" title="Sort artworks by criteria">
-            <option value="">Sort By</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="popular">Most Popular</option>
-        </select>
+        <div class="filter-group">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="painting">Painting</option>
+                <option value="sculpture">Sculpture</option>
+                <option value="digital">Digital Art</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="sort-filter">Sort By:</label>
+            <select id="sort-filter" title="Sort artworks by criteria">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="popular">Most Popular</option>
+                <option value="title-asc">Title A-Z</option>
+                <option value="title-desc">Title Z-A</option>
+            </select>
+        </div>
     </section>
 
     <!-- Gallery Grid -->
     <section class="art-gallery">
-        <div class="art-card">
-            <img src="https://via.placeholder.com/300x300" alt="Artwork">
-            <h2>Starry Dreams</h2>
-            <p class="artist">by Luna Grey</p>
-            <p class="price">$120</p>
-        </div>
-
-        <div class="art-card">
-            <img src="https://via.placeholder.com/300x300" alt="Artwork">
-            <h2>Silent Forest</h2>
-            <p class="artist">by Kai Evans</p>
-            <p class="price">$90</p>
-        </div>
-
-        <div class="art-card">
-            <img src="https://via.placeholder.com/300x300" alt="Artwork">
-            <h2>City Lights</h2>
-            <p class="artist">by Mira Blake</p>
-            <p class="price">$75</p>
-        </div>
-
-        <!-- Add more cards as needed -->
+        <!-- Artwork cards will be dynamically inserted here by JavaScript -->
+        <div class="loading-indicator">Loading artworks...</div>
     </section>
     <footer id="mainFooter"></footer>
 </body>

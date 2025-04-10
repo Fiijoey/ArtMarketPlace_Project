@@ -220,6 +220,14 @@ header .cartIcon {
     color: var(--primary-color);
 }
 
+.blog-cards {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.blog-card{
+    background-color: var(--neutral-color);
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 2rem;
@@ -270,10 +278,39 @@ header .cartIcon {
 
 /* CTA section */
 .cta-section {
+    display: flex;
+    flex-direction: column;
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--primary-color);
-    color: white;
+    color: var(--neutral-color);
+    background: url('../images/home-heros/hero1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 18vh;
+    position: relative;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.304);
+    z-index: 0;
+}
+
+.cta-section h2,
+.cta-section p,
+.cta-buttons {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--neutral-color);
+    z-index: 0;
 }
 
 .cta-content {
@@ -699,12 +736,14 @@ button {
 .gallery-intro h1 {
     font-size: 1.6rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .gallery-intro p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Filters */
