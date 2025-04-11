@@ -104,4 +104,30 @@ export async function loadHeaderFooter() {
 
   renderWithTemplate(headerTemplate, headerElement, true, updateCartCount);
   renderWithTemplate(footerTemplate, footerElement, true, updateCartCount);
+
+  assignActiveNav();
+}
+
+export function assignActiveNav() {
+  const currentPath = window.location.pathname;
+  const desktopNavLinks = document.querySelectorAll(".desktop-nav a");
+  desktopNavLinks.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    if (
+      (currentPath === "/" && linkPath === "/index.html") ||
+      linkPath === currentPath
+    ) {
+      link.classList.add("active");
+    }
+  });
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
+  mobileNavLinks.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    if (
+      (currentPath === "/" && linkPath === "/index.html") ||
+      linkPath === currentPath
+    ) {
+      link.classList.add("active");
+    }
+  });
 }

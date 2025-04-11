@@ -4,6 +4,9 @@ import { loadHeaderFooter } from "./utilities.mjs";
 (async function () {
   await loadHeaderFooter();
 
+  // Set active navigation link based on current page
+  assignActiveNav();
+
   // Get hamburger menu and mobile nav elements
   const hamburger = document.querySelector(".hamburger-menu");
   const mobileNav = document.querySelector(".mobile-nav");
@@ -26,6 +29,37 @@ import { loadHeaderFooter } from "./utilities.mjs";
   // Load and display artwork cards
   await loadArtworks();
 })();
+
+/**
+ * Assigns 'active' class to navigation links that match the current page
+ */
+function assignActiveNav() {
+  const currentPath = window.location.pathname;
+
+  // Handle desktop navigation links
+  const desktopNavLinks = document.querySelectorAll(".desktop-nav a");
+  desktopNavLinks.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    if (
+      (currentPath === "/" && linkPath === "/index.html") ||
+      linkPath === currentPath
+    ) {
+      link.classList.add("active");
+    }
+  });
+
+  // Handle mobile navigation links
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
+  mobileNavLinks.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    if (
+      (currentPath === "/" && linkPath === "/index.html") ||
+      linkPath === currentPath
+    ) {
+      link.classList.add("active");
+    }
+  });
+}
 /**
  * Shuffles an array randomly
  * @param {Array} array - The array to shuffle

@@ -66,6 +66,13 @@ h6 {
     color: var(--neutral-color);
 }
 
+.desktop-nav ul li a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 3px;
+}
+
 .header-buttons button {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
@@ -370,6 +377,7 @@ header .cartIcon {
 }
 
 .cta-buttons .btn {
+    text-decoration: none;
     padding: 0.75rem 1.5rem;
     background-color: white;
     color: var(--primary-color);
@@ -581,8 +589,11 @@ button {
     object-fit: cover;
 }
 
-.product-card .add-to-cart {
+.product-card .add-to-cart, .add-to-cart {
     background-color: var(--primary-color);
+}
+.add-to-cart:hover {
+    background-color: #4a6c9a;
 }
 
 /* Product Cards Container */
@@ -1326,6 +1337,13 @@ input[type="number"] {
         color: #333;
         font-size: 1.2rem;
         font-weight: 500;
+    }
+
+    .mobile-nav ul li a.active {
+        color: var(--primary-color);
+        font-weight: bold;
+        border-left: 3px solid var(--primary-color);
+        padding-left: 8px;
     }
 
     .hamburger-menu {
