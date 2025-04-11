@@ -55,7 +55,7 @@ function renderCartItems() {
           </label>
           <button class="remove-btn" data-id="${index}">Remove</button>
         </div>
-        <div class="item-price">$${itemPrice.toFixed(2)}</div>
+        <div class="item-price">GHs${itemPrice.toFixed(2)}</div>
       </div>
     `;
     container.insertAdjacentHTML("beforeend", itemHtml);
@@ -64,7 +64,7 @@ function renderCartItems() {
   // Update subtotal in the summary section
   const subtotalElement = document.querySelector(".cart-summary p strong");
   if (subtotalElement) {
-    subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+    subtotalElement.textContent = `GHs${subtotal.toFixed(2)}`;
   }
 
   // Add event listeners for remove buttons

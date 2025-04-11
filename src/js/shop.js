@@ -1,4 +1,5 @@
 import { loadHeaderFooter, addToLocalStorage } from "./utilities.mjs";
+import { updateCartCount } from "./shared.js";
 
 // Function to load artworks from JSON and display them
 async function loadArtworks() {
@@ -28,7 +29,7 @@ async function loadArtworks() {
           addToLocalStorage(artwork);
 
           // Optional: Update cart count indicator
-          updateCartCount();
+          updateCartCount(true);
         });
       });
     }
@@ -45,18 +46,9 @@ function createProductCard(artwork) {
             </a>
             <h2>${artwork.art_name}</h2>
             <p>${artwork.description}</p>
-            <p class="price">$${artwork.price}</p>
+            <p class="price">GHs${artwork.price}</p>
             <button class="add-to-cart" data-artwork='${JSON.stringify(artwork)}'>Add to Cart</button>
           </div>`;
-}
-
-// Function to update the cart count in the UI
-function updateCartCount() {
-  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  const cartCount = document.querySelector(".cart-count");
-  if (cartCount) {
-    cartCount.textContent = cartItems.length;
-  }
 }
 
 // Using async IIFE to ensure header is loaded before adding event listeners

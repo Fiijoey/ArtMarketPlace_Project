@@ -1,33 +1,11 @@
 import { loadHeaderFooter, addToLocalStorage } from "./utilities.mjs";
+import { updateCartCount } from "./shared.js";
 
 // Function to get URL parameters
 function getParam(param) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   return urlParams.get(param);
-}
-
-// Function to update the cart count in the UI and trigger animation
-function updateCartCount(animate = false) {
-  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  const cartCount = document.querySelector(".cart-count");
-  if (cartCount) {
-    cartCount.textContent = cartItems.length;
-
-    // Add animation if requested
-    if (animate) {
-      const cartIcon = document.querySelector(".cart-icon");
-      if (cartIcon) {
-        // Add animation class
-        cartIcon.classList.add("cart-bounce");
-
-        // Remove animation class after animation completes
-        setTimeout(() => {
-          cartIcon.classList.remove("cart-bounce");
-        }, 500);
-      }
-    }
-  }
 }
 
 // Function to load and display artwork details

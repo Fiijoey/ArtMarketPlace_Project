@@ -1198,7 +1198,8 @@ input[type="number"] {
 .artwork-card .add-to-cart:hover {
     background-color: #4a6c9a;
 }
-.artists-grid .artist-card{
+
+.artists-grid .artist-card {
     border: 1px solid #eee;
     border-radius: 8px;
     padding: 1rem;
@@ -1389,9 +1390,19 @@ input[type="number"] {
     }
 
     .section-title {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title p {
+        font-size: 1.2rem;
+        color: #555;
     }
 
     .product-grid {
