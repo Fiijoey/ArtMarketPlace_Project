@@ -7,12 +7,26 @@ function getParam(param) {
   return urlParams.get(param);
 }
 
-// Function to update the cart count in the UI
-function updateCartCount() {
+// Function to update the cart count in the UI and trigger animation
+function updateCartCount(animate = false) {
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
   const cartCount = document.querySelector(".cart-count");
   if (cartCount) {
     cartCount.textContent = cartItems.length;
+
+    // Add animation if requested
+    if (animate) {
+      const cartIcon = document.querySelector(".cart-icon");
+      if (cartIcon) {
+        // Add animation class
+        cartIcon.classList.add("cart-bounce");
+
+        // Remove animation class after animation completes
+        setTimeout(() => {
+          cartIcon.classList.remove("cart-bounce");
+        }, 500);
+      }
+    }
   }
 }
 
@@ -39,10 +53,11 @@ async function loadArtworkDetails() {
       // Update the product details in the DOM
       document.querySelector(".product-image img").src = artwork.image;
       document.querySelector(".product-image img").alt = artwork.art_name;
-      document.querySelector(".product-info h1").textContent = artwork.art_name;
-      document.querySelector(".product-info .price").textContent =
+      document.querySelector(".product-details h1").textContent =
+        artwork.art_name;
+      document.querySelector(".product-details .price").textContent =
         `$${artwork.price}`;
-      document.querySelector(".product-info .description").textContent =
+      document.querySelector(".product-details .description").textContent =
         artwork.description;
 
       // Add event listener to the Add to Cart button
@@ -52,7 +67,7 @@ async function loadArtworkDetails() {
           event.preventDefault();
 
           // Get quantity from input or default to 1
-          const quantityInput = document.querySelector('input[type="number"]');
+          const quantityInput = document.querySelector("#quantity");
           const quantity = quantityInput ? Number(quantityInput.value) : 1;
 
           // Create a copy of the artwork object with quantity
@@ -61,8 +76,8 @@ async function loadArtworkDetails() {
           // Add to cart
           addToLocalStorage(artworkToAdd);
 
-          // Update cart count
-          updateCartCount();
+          // Update cart count with animation
+          updateCartCount(true);
         });
       }
     } else {

@@ -22,13 +22,28 @@ export function setLocalStorage(data, key = LOCAL_STORAGE_KEY) {
 
 export function addToLocalStorage(data, key = LOCAL_STORAGE_KEY) {
   if (localStorage.getItem(key) == null) {
+    // If the key doesn't exist in localStorage, create a new array with the item
     let dataArray = [];
     dataArray.push(data);
     localStorage.setItem(key, JSON.stringify(dataArray));
-    //dataArray.push(JSON.parse(localStorage.getItem(key)));
   } else {
-    let dataArray = JSON.parse(localStorage.getItem(key)); //
-    dataArray.unshift(data);
+    // Get the existing array from localStorage
+    let dataArray = JSON.parse(localStorage.getItem(key));
+
+    // Check if an item with the same art_name already exists in the cart
+    const existingItem = dataArray.find(
+      (item) => item.art_name === data.art_name,
+    );
+
+    if (existingItem) {
+      // If the item already exists, increment its quantity
+      existingItem.quantity += data.quantity;
+    } else {
+      // If the item doesn't exist, add it to the beginning of the array
+      dataArray.unshift(data);
+    }
+
+    // Save the updated array back to localStorage
     localStorage.setItem(key, JSON.stringify(dataArray));
   }
 }

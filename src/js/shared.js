@@ -18,6 +18,15 @@ export function updateCartCount(loaded) {
       } else {
         cartCountElement.style.display = "none"; // Hide the cart count if the cart is empty
       }
+
+      // Trigger the animation on cart icon
+      const cartIcon = document.querySelector(".cartIcon");
+      if (cartIcon) {
+        cartIcon.classList.remove("cart-icon-animate");
+        // Force reflow to restart the animation
+        void cartIcon.offsetWidth;
+        cartIcon.classList.add("cart-icon-animate");
+      }
     }
   }
 }
