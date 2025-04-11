@@ -25,6 +25,9 @@ import { loadHeaderFooter, clearHtml, qs } from "./utilities.mjs";
 
   // Gallery functionality
   await loadGalleryArtworks();
+
+  // Load Instagram posts
+  await loadInstagramPosts();
 })();
 
 /**
@@ -210,4 +213,50 @@ function getCategory(artwork) {
   if (image.includes("sculp")) return "sculpture";
   if (image.includes("watercolor")) return "digital";
   return "other";
+}
+
+/**
+ * Fetches Instagram posts from JSON file and renders them
+ */
+async function loadInstagramPosts() {
+  try {
+    const response = await fetch("/public/json/instagramData.json");
+    if (!response.ok) {
+      throw new Error("Failed to load Instagram posts");
+    }
+    const instaData = await response.json();
+    renderInstagramPosts(instaData);
+  } catch (error) {
+    console.error("Error loading Instagram posts:", error);
+    const instaContainer = document.querySelector(".instaPosts");
+    if (instaContainer) {
+      instaContainer.innerHTML =
+        '<p class="error-message">Unable to load Instagram posts.</p>';
+    }
+  }
+}
+
+/**
+ * Renders Instagram posts in the designated container
+ * @param {Array} posts - Array of Instagram post objects
+ */
+function renderInstagramPosts(posts) {
+  const container = document.querySelector(".instaPosts");
+  if (!container) return;
+
+  clearHtml(container);
+
+  let html = "";
+  posts.forEach((post) => {
+    html += `
+      <div class="insta-post">
+        <a href="${post.permalink}" target="_blank">
+          <img src="${post.media_url}" alt="${post.caption || "Instagram post"}">
+        </a>
+        <p>${post.caption || ""}</p>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
 }

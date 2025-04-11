@@ -4,7 +4,7 @@
   "description": "The Art Marketplace Solution Project is an innovative platform designed to bridge the gap between artists, art enthusiasts, and buyers. This project aims to create a dynamic online marketplace where creative talents can showcase their artwork, connect with a broader audience, and sell their creations with ease.",
   "main": "index.js",
   "scripts": {
-    "start": "vite",
+    "start": "vite, node instagramFetch.js",
     "build": "vite build --emptyOutDir",
     "lint": "eslint *.js src/**/*.js",
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
