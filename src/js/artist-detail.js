@@ -29,7 +29,7 @@ import { loadHeaderFooter, getParam, clearHtml } from "./utilities.mjs";
         <img src="${artist.image}" alt="${artist.name}" class="artist-image">
         <h2>${artist.name}</h2>
         <p>Age: ${artist.age}</p>
-        <p>Field: ${artist.field}</p>
+        <p>Field: ${artist.field_of_interest}</p>
         <p>${artist.story}</p>
       `;
 
@@ -60,8 +60,8 @@ import { loadHeaderFooter, getParam, clearHtml } from "./utilities.mjs";
         cardDiv.classList.add("artwork-card");
 
         cardDiv.innerHTML = `
-          <img src="${artwork.image}" alt="${artwork.title}" class="artwork-image">
-          <h3>${artwork.title}</h3>
+          <img src="${artwork.image}" alt="${artwork.art_name}" class="artwork-image">
+          <h3>${artwork.art_name}</h3>
           <p>${artwork.description || ""}</p>
         `;
 

@@ -64,7 +64,7 @@ import { loadHeaderFooter, clearHtml } from "./utilities.mjs";
 
         // Create HTML content for the artist card
         artistCard.innerHTML = `
-            <div class="artist-image">
+            <div class="artistDetail-image">
               <img src="${artist.image}" alt="${artist.name}">
             </div>
             <div class="artist-info">

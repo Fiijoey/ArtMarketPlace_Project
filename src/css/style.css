@@ -1198,6 +1198,13 @@ input[type="number"] {
 .artwork-card .add-to-cart:hover {
     background-color: #4a6c9a;
 }
+.artists-grid .artist-card{
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 /* Artist Detail Page Responsive Styles */
 @media (min-width: 768px) {
