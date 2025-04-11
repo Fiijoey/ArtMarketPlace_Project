@@ -2,71 +2,71 @@
     {
         "image": "/images/artworksImg/paint1.jpg",
         "art_name": "Dreamscape Horizon",
-        "description": "A surreal blend of vibrant colors and abstract forms.",
+        "description": "An ethereal masterpiece that transports viewers to the realm of dreams, where vibrant hues dance with abstract shapes in harmonious symphony. This artwork captures the essence of boundless imagination, evoking emotions that transcend the ordinary. Designed by Emma Carter, it beckons you to explore the uncharted territories of your own inner landscapes.",
         "designed_by": "Emma Carter",
-        "price": "GHs2000"
+        "price": "2000"
     },
     {
         "image": "/images/artworksImg/paint2.jpg",
         "art_name": "Silent Bloom",
-        "description": "A delicate portrayal of nature's solitude.",
+        "description": "With delicate strokes and gentle whispers of color, Emma Carter's 'Silent Bloom' brings to life the poignant solitude of nature. This tender portrayal speaks to the quiet resilience and beauty that exists in the world around us, urging viewers to find solace in the serene moments that life offers.",
         "designed_by": "Emma Carter",
-        "price": "GHs1500"
+        "price": "1500"
     },
     {
         "image": "/images/artworksImg/sculp3.jpg",
         "art_name": "Eternal Forms",
-        "description": "A marble sculpture echoing timeless beauty.",
+        "description": "Joaquin Hernandez's marble sculpture stands as a testament to timeless elegance and enduring beauty. Its flowing curves and intricate craftsmanship seem to breathe life into the stone, inviting viewers to admire the eternal connection between art and the essence of humanity.",
         "designed_by": "Joaquin Hernandez",
-        "price": "GHs1800 "
+        "price": "1800"
     },
     {
         "image": "/images/artworksImg/watercolor.jpg",
         "art_name": "Fragmented Ideals",
-        "description": "An abstract sculpture reflecting modern dilemmas.",
+        "description": "A bold and provocative creation by Joaquin Hernandez, this abstract sculpture challenges viewers to confront the fragmented realities of modern life. Its jagged forms and unconventional design spark contemplation about the complexities of contemporary dilemmas, encouraging introspection and dialogue.",
         "designed_by": "Joaquin Hernandez",
-        "price": "GHs1450"
+        "price": "1450"
     },
     {
         "image": "/images/artworksImg/watercolor1.jpg",
         "art_name": "Neon Realms",
-        "description": "A digital depiction of a futuristic cityscape.",
+        "description": "Sophia Klein's 'Neon Realms' offers a breathtaking vision of a futuristic cityscape bathed in radiant neon lights. Every detail of this digital artwork pulsates with energy and innovation, inspiring viewers to dream about the limitless possibilities that lie ahead in the ever-evolving urban landscape.",
         "designed_by": "Sophia Klein",
-        "price": "GHs4500"
+        "price": "4500"
     },
     {
         "image": "/images/artworksImg/watercolor2.jpg",
         "art_name": "Galactic Dreams",
-        "description": "A sci-fi inspired visual with cosmic themes.",
+        "description": "A cosmic voyage into the unknown, Sophia Klein's sci-fi-inspired visual masterpiece captivates with its mesmerizing interstellar themes. Vibrant colors and imaginative designs transport viewers to galaxies far beyond, igniting a sense of wonder and exploration.",
         "designed_by": "Sophia Klein",
-        "price": "GHs1154"
+        "price": "1154"
     },
     {
         "image": "/images/artworksImg/sculp2.jpg",
         "art_name": "Urban Symphonies",
-        "description": "A photographic series capturing the rhythm of city life.",
+        "description": "Liam Davies' photographic series captures the pulsating rhythm of city life with striking precision. Each image resonates with the energy and vibrancy of the urban landscape, weaving together the stories of countless lives intersecting in the bustling metropolis.",
         "designed_by": "Liam Davies",
-        "price": "GHs2000"
+        "price": "2000"
     },
     {
         "image": "/images/artworksImg/paint4.jpg",
         "art_name": "Echoes of Silence",
-        "description": "A black-and-white photograph telling untold stories.",
+        "description": "In haunting black and white, Liam Davies' 'Echoes of Silence' speaks volumes with its quiet yet profound narrative. Every shadow and light in this photograph tells a story of emotions left unspoken, creating an evocative journey through untold human experiences.",
         "designed_by": "Liam Davies",
-        "price": "GHs4000"
+        "price": "4000"
     },
     {
         "image": "/images/artworksImg/sculp1.jpg",
         "art_name": "Fusion Dreams",
-        "description": "A mixed media piece exploring cultural identities.",
+        "description": "Aisha Patel's mixed media masterpiece explores the rich tapestry of cultural identities. With vibrant colors and diverse textures, 'Fusion Dreams' celebrates the beauty of unity and diversity, inspiring viewers to embrace the interconnected world we live in.",
         "designed_by": "Aisha Patel",
-        "price": "GHs5400"
+        "price": "5400"
     },
     {
         "image": "/images/artworksImg/paint3.jpg",
         "art_name": "Layers of Time",
-        "description": "An intricate work combining past and present techniques.",
+        "description": "A captivating interplay of past and present, Aisha Patel's 'Layers of Time' masterfully combines ancient techniques with modern sensibilities. This intricate work invites viewers to reflect on the seamless connection between tradition and innovation, offering a glimpse into the timeless journey of art itself.",
         "designed_by": "Aisha Patel",
-        "price": "GHs1800"
+        "price": "1800"
     }
 ]

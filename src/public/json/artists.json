@@ -1,37 +1,37 @@
 [
     {
-        "image": "/images/artworksImg/watercolor1.jpg",
+        "image": "/images/artistImg/artistman1.jpg",
         "name": "Emma Carter",
         "age": 32,
         "field_of_interest": "Painting",
-        "story": "Emma specializes in surreal landscapes, blending emotions with nature."
+        "story": "Emma Carter discovered her passion for painting during her childhood in the rolling hills of rural England. She found solace and inspiration in nature, sketching landscapes and whimsical scenes under sprawling oak trees. As she matured, Emma developed a unique style that melds surrealism with a keen eye for vivid color. Her works are often described as dreamlike windows to another world, resonating deeply with those seeking beauty and emotion in art.\n\nEmma's journey has been one of perseverance and growth, marked by countless hours of honing her craft and confronting personal challenges. From showcasing her work at small galleries to eventually earning international acclaim, Emma embodies the essence of a modern-day artist. Her belief that art should evoke emotions and inspire introspection is evident in every brushstroke."
     },
     {
-        "image": "/images/artworksImg/watercolor1.jpg",
+        "image": "/images/artistImg/artistman2.jpg",
         "name": "Joaquin Hernandez",
         "age": 41,
         "field_of_interest": "Sculpture",
-        "story": "Joaquin's works focus on modern interpretations of classical techniques."
+        "story": "Joaquin Hernandez grew up in Barcelona, surrounded by the rich history and architecture of the city. Inspired by Gaudí's intricate designs and the raw beauty of classical sculptures, Joaquin embarked on his journey into sculpting. His early works focused on traditional techniques, but as time passed, he began incorporating modern elements, creating pieces that bridge the gap between the past and the present.\n\nJoaquin's sculptures often explore themes of identity and transformation, reflecting his belief that art is a constant evolution of self. With each creation, Joaquin challenges the viewer to see beyond the surface, finding meaning in the subtle details and textures. Today, his sculptures grace public spaces and private collections, leaving a lasting impression on those fortunate enough to experience his artistry."
     },
     {
-        "image": "/images/artworksImg/watercolor1.jpg",
+        "image": "/images/artistImg/artistwoman1.jpg",
         "name": "Sophia Klein",
         "age": 28,
         "field_of_interest": "Digital Art",
-        "story": "Sophia creates mesmerizing digital visuals inspired by sci-fi worlds."
+        "story": "Sophia Klein grew up in Berlin, surrounded by the dynamic interplay of technology and creativity that characterizes the city. Drawn to the possibilities of digital media, Sophia began experimenting with digital tools at an early age. Her fascination with sci-fi worlds and futuristic landscapes led her to create artworks that transport viewers to realms beyond imagination.\n\nSophia’s style is characterized by intricate details and bold color choices, creating visuals that captivate and inspire. Her work often explores themes of innovation, humanity, and the universe, making her a voice for the digital art revolution. Through her creations, Sophia encourages viewers to question the boundaries of reality and immerse themselves in the beauty of the unknown."
     },
     {
-        "image": "/images/artworksImg/watercolor1.jpg",
+        "image": "/images/artistImg/artistman4.jpg",
         "name": "Liam Davies",
         "age": 37,
         "field_of_interest": "Photography",
-        "story": "Liam captures the raw beauty of urban life through his lens."
+        "story": "Liam Davies is a storyteller with a camera, capturing moments that often go unnoticed in the bustling streets of London. Fascinated by the energy of urban life, Liam began his journey in photography by documenting the raw beauty of everyday scenes—graffiti-covered alleyways, the interplay of light and shadow, and the expressions of passersby.\n\nOver the years, Liam has refined his craft, blending technical expertise with a deep understanding of human emotion. His photographs tell tales of resilience, connection, and the unspoken stories of city dwellers. With an uncanny ability to find beauty in the mundane, Liam’s work resonates with audiences, reminding them of the vibrant symphony of life all around."
     },
     {
-        "image": "/images/artworksImg/watercolor1.jpg",
+        "image": "/images/artistImg/artistwoman2.jpg",
         "name": "Aisha Patel",
         "age": 29,
         "field_of_interest": "Mixed Media",
-        "story": "Aisha's art fuses traditional and digital mediums, exploring themes of identity."
+        "story": "Aisha Patel’s journey into mixed media art began in Mumbai, where she was immersed in a world of vibrant culture and rich traditions. With a background in graphic design and a love for traditional techniques, Aisha developed a style that merges the old with the new. Her works are a fusion of colors, textures, and patterns that explore themes of identity and diversity.\n\nThrough her art, Aisha seeks to bridge cultural divides and highlight the beauty of individuality. Each piece she creates is a reflection of her experiences and the stories she’s encountered, blending historical influences with contemporary perspectives. Aisha’s art invites viewers to celebrate their heritage and embrace the tapestry of human existence."
     }
 ]
