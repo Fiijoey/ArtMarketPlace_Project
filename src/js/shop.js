@@ -40,7 +40,9 @@ async function loadArtworks() {
 // Helper function to create a product card HTML
 function createProductCard(artwork) {
   return `<div class="product-card">
-            <img src="${artwork.image}" alt="${artwork.art_name}" />
+            <a href="../artPeice/index.html?art=${encodeURIComponent(artwork.art_name)}">
+              <img src="${artwork.image}" alt="${artwork.art_name}" />
+            </a>
             <h2>${artwork.art_name}</h2>
             <p>${artwork.description}</p>
             <p class="price">$${artwork.price}</p>
