@@ -1078,7 +1078,7 @@ input[type="number"] {
 .artists-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 0 auto;
     padding: 1rem;
 }
@@ -1635,11 +1635,5 @@ input[type="number"] {
 @media (min-width: 769px) and (max-width: 992px) {
     .artists-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 993px) {
-    .artists-grid {
-        grid-template-columns: repeat(4, 1fr);
     }
 }
