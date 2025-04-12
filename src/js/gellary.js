@@ -225,7 +225,7 @@ async function loadInstagramPosts() {
       throw new Error("Failed to load Instagram posts");
     }
     const instaData = await response.json();
-    renderInstagramPosts(instaData);
+    renderInstagramPosts(instaData.data);
   } catch (error) {
     console.error("Error loading Instagram posts:", error);
     const instaContainer = document.querySelector(".instaPosts");
