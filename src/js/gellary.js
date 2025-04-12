@@ -73,7 +73,7 @@ function renderGallery(artworks) {
             <h3>${artwork.art_name}</h3>
             <p class="description">${artwork.description}</p>
             <p class="artist">Artist: ${artwork.designed_by}</p>
-            <p class="price">${artwork.price || "Price on request"}</p>
+            <p class="price">GHs${artwork.price || "Price on request"}</p>
         </div>
     `,
     )
