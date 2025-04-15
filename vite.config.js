@@ -13,7 +13,7 @@ export default defineConfig({
         checkout: resolve(__dirname, "src/checkout/index.html"),
         artPeice: resolve(__dirname, "src/artPeice/index.html"),
         checkedout: resolve(__dirname, "src/checkout/success.html"),
-        gellary: resolve(__dirname, "src/gellary/index.html"),
+        gellary: resolve(__dirname, "src/gallery/index.html"),
         artist: resolve(__dirname, "src/artist/index.html"),
         shop: resolve(__dirname, "src/shop/index.html"),
       },
