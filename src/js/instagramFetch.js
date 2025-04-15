@@ -9,7 +9,6 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 
 // Instagram API configuration
-// IMPORTANT: Replace 'YOUR_ACCESS_TOKEN' with your actual Instagram API access token
 const INSTAGRAM_API_ENDPOINT = 'https://graph.instagram.com/me/media';
 const ACCESS_TOKEN = 'IGAAH2giwB1qhBZAFB6QWNCa1FIMXlvSkVUTUJJbm5wY0VjZA0FSODB5MHlvTDQ5cHBjU0lBeUE4ZAzAxRzFZAOE1hZAHJsNkdhYW5FVHBjZAjNnVkFxeWtoYkRNcjZAXZA0FNVUNXeWZA0WmZAiejZAkTlZA1MUpUb3h5S0wwR0ZApNTJ5cktrWQZDZD';
 const FIELDS = 'id,media_url,caption,permalink,timestamp,media_type';
