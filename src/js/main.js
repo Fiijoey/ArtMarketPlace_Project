@@ -98,7 +98,7 @@ function createArtworkCard(artwork) {
 async function loadArtworks() {
   try {
     // Fetch artwork data from JSON file
-    const response = await fetch("/public/json/artWorks.json");
+    const response = await fetch("/json/artWorks.json");
     if (!response.ok) {
       throw new Error("Failed to fetch artwork data");
     }
