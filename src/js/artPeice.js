@@ -20,7 +20,7 @@ async function loadArtworkDetails() {
   }
 
   try {
-    const response = await fetch("../public/json/artWorks.json");
+    const response = await fetch("../json/artWorks.json");
     const artworks = await response.json();
 
     const artwork = artworks.find(

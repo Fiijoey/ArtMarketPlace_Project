@@ -9,7 +9,7 @@ import { loadHeaderFooter, getParam, clearHtml } from "./utilities.mjs";
   const artistName = getParam("artist");
 
   // 3. Fetch artists data and find matching artist
-  fetch("../public/json/artists.json")
+  fetch("../json/artists.json")
     .then((response) => response.json())
     .then((artists) => {
       // Find artist with a matching name
@@ -34,7 +34,7 @@ import { loadHeaderFooter, getParam, clearHtml } from "./utilities.mjs";
       `;
 
       // 5. Fetch artworks data and filter by artist name
-      return fetch("../public/json/artWorks.json")
+      return fetch("../json/artWorks.json")
         .then((response) => response.json())
         .then((artworks) => ({ artist, artworks }));
     })

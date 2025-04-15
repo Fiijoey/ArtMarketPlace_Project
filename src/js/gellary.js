@@ -35,7 +35,7 @@ import { loadHeaderFooter, clearHtml, qs } from "./utilities.mjs";
  */
 async function loadGalleryArtworks() {
   try {
-    const response = await fetch("/public/json/artWorks.json");
+    const response = await fetch("/json/artWorks.json");
     if (!response.ok) {
       throw new Error("Failed to fetch artwork data");
     }
@@ -220,7 +220,7 @@ function getCategory(artwork) {
  */
 async function loadInstagramPosts() {
   try {
-    const response = await fetch("/public/json/instagramData.json");
+    const response = await fetch("/json/instagramData.json");
     if (!response.ok) {
       throw new Error("Failed to load Instagram posts");
     }

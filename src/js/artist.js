@@ -30,7 +30,7 @@ import { loadHeaderFooter, clearHtml } from "./utilities.mjs";
 
     if (visionContainer) {
       // Fetch artists data from JSON file
-      const response = await fetch("../public/json/artists.json");
+      const response = await fetch("../json/artists.json");
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);

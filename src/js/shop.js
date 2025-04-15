@@ -4,7 +4,7 @@ import { updateCartCount } from "./shared.js";
 // Function to load artworks from JSON and display them
 async function loadArtworks() {
   try {
-    const response = await fetch("../public/json/artWorks.json");
+    const response = await fetch("../json/artWorks.json");
     const artworks = await response.json();
 
     // Create HTML for all product cards
