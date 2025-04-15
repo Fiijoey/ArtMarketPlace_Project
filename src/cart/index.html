@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Market Place Solution | My Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cart.js" type="module"></script>
+</head>
+
+<body>
+    <header id="mainHeader"></header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="cart-items">
+            <h1>Your Cart</h1>
+
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/100" alt="Art preview">
+                <div class="item-details">
+                    <h2>Starry Dreams</h2>
+                    <p>Canvas Print</p>
+                    <label>
+                        Qty:
+                        <input type="number" value="1" min="1">
+                    </label>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                <div class="item-price">$120</div>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/100" alt="Art preview">
+                <div class="item-details">
+                    <h2>Urban Chaos</h2>
+                    <p>Framed Print</p>
+                    <label>
+                        Qty:
+                        <input type="number" value="2" min="1">
+                    </label>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                <div class="item-price">$180</div>
+            </div>
+        </section>
+
+        <section class="cart-summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: <strong>$300</strong></p>
+            <p>Shipping: <em>Calculated at checkout</em></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="mainFooter"></footer>
+</body>
+
+</html>

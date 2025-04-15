@@ -1,0 +1,30 @@
+[
+    {
+        "question": "What is the art marketplace?",
+        "answer": "An online platform where artists and buyers can connect to showcase and purchase artworks."
+    },
+    {
+        "question": "How can I register as an artist?",
+        "answer": "Simply sign up, create a profile, and upload your portfolio to get started."
+    },
+    {
+        "question": "What payment methods are accepted?",
+        "answer": "We accept credit cards, PayPal, and direct bank transfers."
+    },
+    {
+        "question": "Is there a fee for listing artworks?",
+        "answer": "Artists are charged a 10% commission on sold items."
+    },
+    {
+        "question": "How do I ensure my artwork reaches the buyers safely?",
+        "answer": "Use our partnered shipping providers for secure delivery."
+    },
+    {
+        "question": "Can buyers return purchased art?",
+        "answer": "Returns are allowed within 7 days if the artwork arrives damaged."
+    },
+    {
+        "question": "What kinds of art are allowed on the platform?",
+        "answer": "Our platform welcomes paintings, sculptures, digital art, and photography."
+    }
+]
