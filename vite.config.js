@@ -16,6 +16,7 @@ export default defineConfig({
         gellary: resolve(__dirname, "src/gallery/index.html"),
         artist: resolve(__dirname, "src/artist/index.html"),
         shop: resolve(__dirname, "src/shop/index.html"),
+        artistDetail: resolve(__dirname, "src/artist/artist-detail.html"),
       },
     },
   },
